@@ -1,0 +1,44 @@
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #1a1a2e, #16213e);
+  color: white;
+}
+.hero-section .container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-section h1 {
+  font-size: 3rem; /* Adjust size for better scaling */
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Slightly round the corners of the image */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .hero-section .row {
+    flex-direction: column-reverse; /* Stack image and text vertically */
+  }
+
+  .hero-section img {
+    margin-top: 20px;
+  }
+}
